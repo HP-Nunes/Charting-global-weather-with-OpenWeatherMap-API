@@ -5,9 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>WeatherPy html</title>
+    <title>WeatherPy_DataTable</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/dataTables.bootstrap.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -54,9 +58,19 @@
                 </div><!-- /.container-fluid -->
               </nav>
 
-            </body>
+              <br>
+              <div class="container-fluid">
+              <br>
+              <h2>Raw Data</h2>
+              <div id="wrapper" style="width:100%; text-align:center">
+                <iframe style="border-style: none;" src="csv-to-html-table/data/owm_sample.csv" 
+                height="950" width="900"></iframe> 
+                <!-- https://github.com/HP-Nunes/csv-to-html-table.git -->
+            </h1>
 
-            </html>
+            </div>
+              </div>
+
             
             <!-- Bootstrap core JavaScript
                 ================================================== -->
@@ -68,3 +82,33 @@
             
                 <!-- Latest compiled and minified JavaScript -->
                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+                <script type="text/javascript" src="js/jquery.min.js"></script>
+                <script type="text/javascript" src="js/bootstrap.min.js"></script>
+                <script type="text/javascript" src="js/jquery.csv.min.js"></script>
+                <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+                <script type="text/javascript" src="js/dataTables.bootstrap.js"></script>
+                <script type="text/javascript" src="js/csv_to_html_table.js"></script>
+
+
+                <script type="text/javascript">
+                  function format_link(link){
+                    if (link)
+                      return "<a href='" + link + "' target='_blank'>" + link + "</a>";
+                    else
+                      return "";
+                  }
+
+                      CsvToHtmlTable.init({
+                        csv_path: 'owm_sample.csv', 
+                        element: 'table-container', 
+                        allow_download: true,
+                        csv_options: {separator: ',', delimiter: '"'},
+                        datatables_options: {"paging": false}
+                      });
+                    </script>
+
+
+  </body>
+
+</html>
