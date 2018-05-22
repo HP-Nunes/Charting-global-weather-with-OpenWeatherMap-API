@@ -54,63 +54,131 @@
                 </div><!-- /.container-fluid -->
               </nav>
 
-     <div class="jumbotron">
-                    <h1>Latitude and Climate, what does one have to do with the other?</h1>
-                    <p>Using data from OpenWeatherMap's API, we take a look at
-                        weather data for humidity, temperature, cloudiness and wind speeds
-                        for 455 randomly selected cities spread over Northern and Southern Hemispheres. 
-                        We then determine whether 
-                        there is a correlation between climate variables and latitudes.
-                    <br> 
-                    <br> Explore the plots on display to observe the data distribution!
-                    </p>
-                    <p><a class="btn btn-primary btn-lg" href="WeatherPy_Comparison.html" role="button">See all the plots!</a></p>
-    </div>
 
-    <div class="row">
-            <div class="col-xs-6 col-md-4">
-              <div class="thumbnail">
-                <img src="..." alt="...">
-                <div class="caption">
-                  <h3>Temperature Plot</h3>
-                  <p>...</p>
-                  <p><a href="WeatherPy_Temperature.html" class="btn btn-primary" role="button">Learn more!</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                      <img src="..." alt="...">
-                      <div class="caption">
-                        <h3>Humidity Plot</h3>
-                        <p>...</p>
-                        <p><a href="WeatherPy_Humidity.html" class="btn btn-primary" role="button">Learn more!</a>
-                        </div>
-                    </div>
+              <br><br>
+              <div class = "container">
+                  <div class = "row row-grid">
+                          <div class = "col-xs-6">               
+                          <div class = "box box-left">
+                              <section id = "intro">
+                  <h1>An Analytical Observation of the Relationship Between Weather and Latitude</h1>
+                  <hr>
+
+                    <section id = "abstract">
+                  <p>Using data from OpenWeatherMap's API, we take a look at
+                      weather data for humidity, temperature, cloudiness and wind speeds
+                      for 455 randomly selected cities spread over Northern and Southern Hemispheres. 
+                      We then determine whether 
+                      there is a correlation between climate variables and latitudes.
+                    </p>
+                    <br> Explore the plots on display to observe the data distribution!
+                    <br><br>
+                    <p><a class="btn btn-primary btn-lg" href="WeatherPy_Comparison.html" role="button">See all the plots!</a></p>
                   </div>
-                  <div class="col-sm-6 col-md-4">
-                        <div class="thumbnail">
-                          <img src="..." alt="...">
-                          <div class="caption">
-                            <h3>Cloudiness Plot</h3>
-                            <p>...</p>
-                            <p><a href="WeatherPy_Cloudiness.html" class="btn btn-primary" role="button">Learn more!</a>
+                </div>
+                      <!-- <br> -->
+                      <div class = "col-xs-4">
+                          <div class = "box box-right">    
+                                          <iframe width="550" height="500" frameborder="0" scrolling="no" 
+                      src="https://plot.ly/~HP-Nunes/162/random-cities-sample/"></iframe>
+                                  </div>
+                              </div>
                             </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-4">
-                            <div class="thumbnail">
+
+                  <div class="row">
+                      <div class = "col-xs-6 col-sm-3 col-md-6">
+                          <figure>
                               <img src="..." alt="...">
                               <div class="caption">
-                                <h3>Wind-Speed Plot</h3>
+                                <h3>Temperature Plot</h3>
                                 <p>...</p>
-                                <p><a href="WeatherPy_WindSpeed.html" class="btn btn-primary" role="button">Learn more!</a>
+                                <p><a href="WeatherPy_Temperature.html" class="btn btn-primary" role="button">Learn more!</a></p>
+                              </figure>
                                 </div>
-                            </div>
-                          </div>
-                
-          </div>
 
+                      <div class = "col-xs-6 col-sm-3 col-md-6">
+                          <figure>
+                              <img src="..." alt="...">
+                              <div class="caption">
+                                <h3>Temperature Plot</h3>
+                                <p>...</p>
+                                <p><a href="WeatherPy_Temperature.html" class="btn btn-primary" role="button">Learn more!</a></p>
+                              </figure>  
+                              </div>
+
+                                <div class = "col-xs-6 col-sm-3 col-md-6">
+                                    <figure>
+                                        <img src="..." alt="...">
+                                        <div class="caption">
+                                          <h3>Temperature Plot</h3>
+                                          <p>...</p>
+                                          <p><a href="WeatherPy_Temperature.html" class="btn btn-primary" role="button">Learn more!</a></p>
+                                        </figure>  
+                                        </div>
+
+                                          <div class = "col-xs-6 col-sm-3 col-md-6">
+                                              <figure>
+                                                  <img src="..." alt="...">
+                                                  <div class="caption">
+                                                    <h3>Temperature Plot</h3>
+                                                    <p>...</p>
+                                                    <p><a href="WeatherPy_Temperature.html" class="btn btn-primary" role="button">Learn more!</a></p>
+                                                  </figure> 
+                                                  </div>
+
+                                              </div>
+                                            </div>
+
+                  
+                  <!-- <div class="container">
+                      <div class="row">
+                        
+                          <div class="col">
+                        <div class="col-xs-4"><div class="thumbnail">
+                            <img src="..." alt="...">
+                            <div class="caption">
+                              <h3>Temperature Plot</h3>
+                              <p>...</p>
+                              <p><a href="WeatherPy_Temperature.html" class="btn btn-primary" role="button">Learn more!</a>
+                            </div>
+                          </div></div>
+                        
+                          <div class="col">
+                        <div class="col-xs-4"><div class="thumbnail">
+                            <img src="..." alt="...">
+                            <div class="caption">
+                              <h3>Humidity Plot</h3>
+                              <p>...</p>
+                              <p><a href="WeatherPy_Humidity.html" class="btn btn-primary" role="button">Learn more!</a>
+                              </div>
+                          </div></div>
+
+                        </div>
+
+                        <div class="row">
+                          <div class="col">
+                        <div class="col-xs-4"><div class="thumbnail">
+                            <img src="..." alt="...">
+                            <div class="caption">
+                              <h3>Cloudiness Plot</h3>
+                              <p>...</p>
+                              <p><a href="WeatherPy_Cloudiness.html" class="btn btn-primary" role="button">Learn more!</a>
+                              </div>
+                          </div></div>
+
+                          <div class="col">
+                        <div class="col-xs-4"> <div class="thumbnail">
+                            <img src="..." alt="...">
+                            <div class="caption">
+                              <h3>Wind-Speed Plot</h3>
+                              <p>...</p>
+                              <p><a href="WeatherPy_WindSpeed.html" class="btn btn-primary" role="button">Learn more!</a>
+                              </div>
+                          </div></div>
+
+                        </div> -->
+
+               
     </body>
 
 </html>

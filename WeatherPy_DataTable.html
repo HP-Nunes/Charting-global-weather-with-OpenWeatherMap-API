@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/dataTables.bootstrap.css" rel="stylesheet">
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/dataTables.bootstrap.css" rel="stylesheet"> -->
 
 </head>
 
@@ -58,19 +58,20 @@
                 </div><!-- /.container-fluid -->
               </nav>
 
+          <h1>
               <br>
-              <div class="container-fluid">
-              <br>
-              <h2>Raw Data</h2>
-              <div id="wrapper" style="width:100%; text-align:center">
-                <iframe style="border-style: none;" src="csv-to-html-table/data/owm_sample.csv" 
-                height="950" width="900"></iframe> 
-                <!-- https://github.com/HP-Nunes/csv-to-html-table.git -->
-            </h1>
-
+                  <h2>Raw Data</h2>
+                      <div id="wrapper" style="width:100%; text-align:center">
+                          <iframe width="900" height="800" frameborder="0" scrolling="no" 
+                          src="//plot.ly/~HP-Nunes/151.embed">
+                        </iframe>
+                <!-- <iframe style="border-style: none;" src="csv-to-html-table/data/owm_sample.csv" 
+                height="950" width="900"></iframe>  -->
             </div>
-              </div>
+          </h1>
+    </body>
 
+            </html>
             
             <!-- Bootstrap core JavaScript
                 ================================================== -->
@@ -83,15 +84,15 @@
                 <!-- Latest compiled and minified JavaScript -->
                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-                <script type="text/javascript" src="js/jquery.min.js"></script>
+                <!-- <script type="text/javascript" src="js/jquery.min.js"></script>
                 <script type="text/javascript" src="js/bootstrap.min.js"></script>
                 <script type="text/javascript" src="js/jquery.csv.min.js"></script>
                 <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
                 <script type="text/javascript" src="js/dataTables.bootstrap.js"></script>
-                <script type="text/javascript" src="js/csv_to_html_table.js"></script>
+                <script type="text/javascript" src="js/csv_to_html_table.js"></script> -->
 
 
-                <script type="text/javascript">
+                <!-- <script type="text/javascript">
                   function format_link(link){
                     if (link)
                       return "<a href='" + link + "' target='_blank'>" + link + "</a>";
@@ -106,9 +107,5 @@
                         csv_options: {separator: ',', delimiter: '"'},
                         datatables_options: {"paging": false}
                       });
-                    </script>
+                    </script> -->
 
-
-  </body>
-
-</html>
