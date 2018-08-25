@@ -18,7 +18,7 @@ In building this dashboard, we'll create individual pages for each plot and a me
 
 The website must consist of 7 pages total, including:
 
-* A [landing page](#landing-page) containing:
+* A [landing page](https://hp-nunes.github.io/WeatherPython/) containing:
   * An explanation of the project.
   * Links to each visualizations page.
 * Four [visualization pages](#visualization-pages), each with:
