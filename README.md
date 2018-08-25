@@ -21,15 +21,15 @@ The website must consist of 7 pages total, including:
 * A [landing page](https://hp-nunes.github.io/WeatherPython/) containing:
   * An explanation of the project.
   * Links to each visualizations page.
-* Four [visualization pages](#visualization-pages), each with:
+* Four [visualization pages](https://hp-nunes.github.io/WeatherPython/WeatherPy_Temperature.html), each with:
   * A descriptive title and heading tag.
   * The plot/visualization itself for the selected comparison.
   * A paragraph describing the plot and its significance.
-* A ["Comparisons" page](#comparisons-page) that:
+* A ["Comparisons" page](https://hp-nunes.github.io/WeatherPython/WeatherPy_Comparison.html) that:
   * Contains all of the visualizations on the same page so we can easily visually compare them.
   * Uses a bootstrap grid for the visualizations.
     * The grid must be two visualizations across on screens medium and larger, and 1 across on extra-small and small screens.
-* A ["Data" page](#data-page) that:
+* A ["Data" page](https://hp-nunes.github.io/WeatherPython/WeatherPy_DataTable.html) that:
   * Displays a responsive table containing the data used in the visualizations.
     * The table must be a bootstrap table component.
     * The data must come from exporting the `.csv` file as HTML, or converting it to HTML. You may use a csv-to-html table conversion tool, e.g. [ConvertCSV](http://www.convertcsv.com/csv-to-html.htm).
@@ -45,14 +45,24 @@ Finally, the website must be deployed to github pages.
 
 When finished, submit to BootcampSpot the links to 1) the deployed app and 2) the github repository.
 
-### Considerations
+### Prerequisites
 
-* You may use the data from [HW06](../../HW06-WebAPIs) or choose another dataset. Alternatively, you may use the included [cities dataset](cities.csv) and pull the images from the [included notebook](WeatherPy.ipynb).
-* You must use bootstrap. This includes using the bootstrap `navbar` component for the header on every page, the bootstrap table component for the data page, and the bootstrap grid for responsiveness on the comparison page.
-* You must deploy your website to github pages, with the website working on a live, publicly accessible URL as a result.
-* Be sure to use a CSS media query for the navigation menu.
-* Be sure your website works at all window widths/sizes.
-* Feel free to take some liberty in the visual aspects, but keep the core functionality the same.
+Python/Anaconda version
+* Python 3.6.1 (64-bit)
+* conda 4.3.29
 
+Libraries used
+* matplotlib
+* requests
+* json
+* pandas
+* pprint
+* seaborn
+* plotly
+* numpy
+* sklearn
+* citipy
+* random
 
-
+API used
+* openweathermapy.core
